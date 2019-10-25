@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		079DD3D43C2D7BE56F841FF4 /* Pods-LayoutSugar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutSugar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LayoutSugar_Tests/Pods-LayoutSugar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		309224F72363A3A60033B4B4 /* LayoutSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutSugar.swift; path = LayoutSugar/Classes/LayoutSugar.swift; sourceTree = "<group>"; };
 		603D42D78DA032F41EE644CB /* Pods-LayoutSugar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutSugar_Example.release.xcconfig"; path = "Target Support Files/Pods-LayoutSugar_Example/Pods-LayoutSugar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LayoutSugar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutSugar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +44,10 @@
 		66A787C104BC34C4C2C4088E /* Pods_LayoutSugar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutSugar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		949ACA03BD6A31A4264FD25D /* Pods-LayoutSugar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutSugar_Tests.release.xcconfig"; path = "Target Support Files/Pods-LayoutSugar_Tests/Pods-LayoutSugar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A5E4AF8F96B0E9B98CFB4100 /* Pods_LayoutSugar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutSugar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACB56DB133A78EAEA75A6285 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CA1A6B1B3EB6CE04A18A7EE4 /* LayoutSugar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LayoutSugar.podspec; path = ../LayoutSugar.podspec; sourceTree = "<group>"; };
+		ACB56DB133A78EAEA75A6285 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CA1A6B1B3EB6CE04A18A7EE4 /* LayoutSugar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LayoutSugar.podspec; path = ../LayoutSugar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D4E5A16200F59087ED484815 /* Pods-LayoutSugar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutSugar_Example.debug.xcconfig"; path = "Target Support Files/Pods-LayoutSugar_Example/Pods-LayoutSugar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EA44B0B2965E7FE3EC532DAA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EA44B0B2965E7FE3EC532DAA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309224F92363A3B00033B4B4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				309224F72363A3A60033B4B4 /* LayoutSugar.swift */,
+			);
+			name = Source;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		5C0CD0701D3AE18164E19AAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				309224F92363A3B00033B4B4 /* Source */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for LayoutSugar */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -156,7 +167,6 @@
 				079DD3D43C2D7BE56F841FF4 /* Pods-LayoutSugar_Tests.debug.xcconfig */,
 				949ACA03BD6A31A4264FD25D /* Pods-LayoutSugar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +238,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
