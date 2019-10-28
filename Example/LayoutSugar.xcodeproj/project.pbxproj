@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308D414D2367981E00F8B965 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D414C2367981E00F8B965 /* LayoutConstraint.swift */; };
+		308D414F23679C1000F8B965 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D414E23679C1000F8B965 /* AssociatedObject.swift */; };
+		309224FB236785200033B4B4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309224FA236785200033B4B4 /* Layout.swift */; };
+		309224FD236788250033B4B4 /* LayoutRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309224FC236788250033B4B4 /* LayoutRelation.swift */; };
+		309224FF23678DE70033B4B4 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309224FE23678DE70033B4B4 /* LayoutAnchor.swift */; };
+		30922501236792770033B4B4 /* LayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30922500236792770033B4B4 /* LayoutAttribute.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,7 +35,12 @@
 
 /* Begin PBXFileReference section */
 		079DD3D43C2D7BE56F841FF4 /* Pods-LayoutSugar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutSugar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LayoutSugar_Tests/Pods-LayoutSugar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		309224F72363A3A60033B4B4 /* LayoutSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutSugar.swift; path = LayoutSugar/Classes/LayoutSugar.swift; sourceTree = "<group>"; };
+		308D414C2367981E00F8B965 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = LayoutSugar/Classes/LayoutConstraint.swift; sourceTree = "<group>"; };
+		308D414E23679C1000F8B965 /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AssociatedObject.swift; path = LayoutSugar/Classes/AssociatedObject.swift; sourceTree = "<group>"; };
+		309224FA236785200033B4B4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = LayoutSugar/Classes/Layout.swift; sourceTree = "<group>"; };
+		309224FC236788250033B4B4 /* LayoutRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutRelation.swift; path = LayoutSugar/Classes/LayoutRelation.swift; sourceTree = "<group>"; };
+		309224FE23678DE70033B4B4 /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = LayoutSugar/Classes/LayoutAnchor.swift; sourceTree = "<group>"; };
+		30922500236792770033B4B4 /* LayoutAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutAttribute.swift; path = LayoutSugar/Classes/LayoutAttribute.swift; sourceTree = "<group>"; };
 		603D42D78DA032F41EE644CB /* Pods-LayoutSugar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutSugar_Example.release.xcconfig"; path = "Target Support Files/Pods-LayoutSugar_Example/Pods-LayoutSugar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LayoutSugar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutSugar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,7 +84,12 @@
 		309224F92363A3B00033B4B4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				309224F72363A3A60033B4B4 /* LayoutSugar.swift */,
+				308D414E23679C1000F8B965 /* AssociatedObject.swift */,
+				309224FA236785200033B4B4 /* Layout.swift */,
+				309224FE23678DE70033B4B4 /* LayoutAnchor.swift */,
+				30922500236792770033B4B4 /* LayoutAttribute.swift */,
+				309224FC236788250033B4B4 /* LayoutRelation.swift */,
+				308D414C2367981E00F8B965 /* LayoutConstraint.swift */,
 			);
 			name = Source;
 			path = ..;
@@ -343,16 +359,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LayoutSugar_Tests/Pods-LayoutSugar_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +379,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308D414F23679C1000F8B965 /* AssociatedObject.swift in Sources */,
+				309224FD236788250033B4B4 /* LayoutRelation.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				309224FB236785200033B4B4 /* Layout.swift in Sources */,
+				30922501236792770033B4B4 /* LayoutAttribute.swift in Sources */,
+				308D414D2367981E00F8B965 /* LayoutConstraint.swift in Sources */,
+				309224FF23678DE70033B4B4 /* LayoutAnchor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

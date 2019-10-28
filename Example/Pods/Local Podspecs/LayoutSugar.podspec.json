@@ -1,9 +1,8 @@
 {
   "name": "LayoutSugar",
   "version": "0.1.0",
-  "summary": "A short description of LayoutSugar.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Matt Provost/LayoutSugar",
+  "summary": "Adding sugar to LayoutKit",
+  "homepage": "https://github.com/BSFishy/LayoutSugar",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +11,13 @@
     "Matt Provost": "mprovost@webcreek.com"
   },
   "source": {
-    "git": "https://github.com/Matt Provost/LayoutSugar.git",
+    "git": "https://github.com/BSFishy/LayoutSugar.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LayoutSugar/Classes/**/*"
+  "source_files": "LayoutSugar/Classes/**/*",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }
