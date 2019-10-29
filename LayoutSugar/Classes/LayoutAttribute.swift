@@ -11,7 +11,7 @@ import UIKit
 
 public typealias LayoutAttribute = NSLayoutConstraint.Attribute
 
-public extension Array where Element == LayoutAttribute {
+internal extension Array where Element == LayoutAttribute {
     static var center: [LayoutAttribute] {
         return [.centerX, .centerY]
     }

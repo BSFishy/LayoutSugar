@@ -56,11 +56,6 @@ internal extension LayoutConstraint {
 }
 
 internal extension NSLayoutConstraint {
-    /**
-     Checks if the constraint is equal to given constraint.
-     - Parameter _ other: An NSLayoutConstraint.
-     - Returns: A Bool indicating whether constraints are equal.
-     */
     func equalTo(_ other: NSLayoutConstraint) -> Bool {
         return firstItem === other.firstItem
             && secondItem === other.secondItem
