@@ -1,7 +1,7 @@
 {
   "name": "LayoutSugar",
   "version": "0.1.0",
-  "summary": "Adding sugar to LayoutKit",
+  "summary": "Layout sugar derived from Material",
   "homepage": "https://github.com/BSFishy/LayoutSugar",
   "license": {
     "type": "MIT",

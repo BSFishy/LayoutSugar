@@ -152,7 +152,7 @@ public extension Layout {
     /// - Parameter relationer: The relationship between the trailing sides
     @discardableResult
     func trailing(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationerStruct.equal) -> Layout {
-        return constraint(.trailing, relationer: relationer, constant: offset)
+        return constraint(.trailing, relationer: relationer, constant: -offset)
     }
 
     /// Add a constraint to the right side.
@@ -163,7 +163,7 @@ public extension Layout {
     /// - Parameter relationer: The relationship between the right sides
     @discardableResult
     func right(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationerStruct.equal) -> Layout {
-        return constraint(.right, relationer: relationer, constant: offset)
+        return constraint(.right, relationer: relationer, constant: -offset)
     }
 
     /// Add a constraint to the bottom.
@@ -174,7 +174,7 @@ public extension Layout {
     /// - Parameter relationer: The relationship between the bottoms
     @discardableResult
     func bottom(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationerStruct.equal) -> Layout {
-        return constraint(.bottom, relationer: relationer, constant: offset)
+        return constraint(.bottom, relationer: relationer, constant: -offset)
     }
 
     /// Add a constraint to the width.
@@ -301,7 +301,7 @@ public extension Layout {
     /// - Parameter relationer: The relationship between the trailing sides
     @discardableResult
     func trailingSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationerStruct.equal) -> Layout {
-        return constraint(.trailing, relationer: relationer, constant: offset, useSafeArea: true)
+        return constraint(.trailing, relationer: relationer, constant: -offset, useSafeArea: true)
     }
 
     /// Add a constraint to the right side safe area.
@@ -314,7 +314,7 @@ public extension Layout {
     /// - Parameter relationer: The relationship between the right sides
     @discardableResult
     func rightSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationerStruct.equal) -> Layout {
-        return constraint(.right, relationer: relationer, constant: offset, useSafeArea: true)
+        return constraint(.right, relationer: relationer, constant: -offset, useSafeArea: true)
     }
 
     /// Add a constraint to the bottom safe area.
@@ -327,7 +327,7 @@ public extension Layout {
     /// - Parameter relationer: The relationship between the bottoms
     @discardableResult
     func bottomSafe(_ offset: CGFloat = 0, _ relationer: LayoutRelationer = LayoutRelationerStruct.equal) -> Layout {
-        return constraint(.bottom, relationer: relationer, constant: offset, useSafeArea: true)
+        return constraint(.bottom, relationer: relationer, constant: -offset, useSafeArea: true)
     }
 
     /// Add a constraint to the width.
